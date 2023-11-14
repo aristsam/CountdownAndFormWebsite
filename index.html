@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE IS ALMOST READY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+
+<video id="video-background" autoplay muted loop>
+    <source src="pexels.mp4" type="video/mp4">   
+</video>
+
+<div id="main-content">
+    <h1>WEBSITE IS ALMOST READY</h1>
+<p>Our website is under construction. We will be here soon with our new awesome.<br>Subscribe to be notified.</p>
+     <div id="timer"></div>
+     
+    <div id="buttons">
+        <a class="button" href="index.html">HOME</a>
+        <button class="button" onclick="openModal('subscribeModal')">SUBSCRIBE NOW</button>
+        <button class="button" onclick="openModal('contactModal')">CONTACT US</button>
+    </div>
+</div>
+
+
+<div id="subscribeModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('subscribeModal')">&times;</span>      
+        <iframe src="https://mailchi.mp/0157358c54f8/starup" width="1000px" height="700px"></iframe>                
+    </div>
+</div>
+
+
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('contactModal')">&times;</span>
+        
+        <form>
+            <div class="form-group left">
+                <label for="input1">FIRSTNAME</label><input required type="text" placeholder="A1">
+                <label for="input2">LASTNAME</label><input required  type="text" placeholder="A2">
+                <label for="input3">ADDRESS</label><input required  type="text" placeholder="A3">
+                <label for="input4">NUMBER</label><input required  type="text" placeholder="A4">
+                <label for="input5">CITY</label><input required  type="text" placeholder="A5">
+                <label for="input6">LOCATION</label><input required  type="text" placeholder="A6">
+                <label for="input7">FAMILY STATUS</label><br><select required>
+                    <option value="" selected disabled>CHOOSE</option>
+                    <option value="SINGLE">SINGLE</option>
+                    <option value="MARRIED">MARRIED</option>            
+                </select><br>
+                <label  for="input8">CHILDREN</label><input id="input8" type="checkbox" placeholder="A8">
+                <div id="label9">
+                    <label for="input9" >NUMBER OF CHILDREN</label><input required  type="number" placeholder="A9">
+                </div>               
+            </div>
+    
+            <div class="form-group right">
+                <label for="input10">DATE OF BIRTH</label><input required  type="date" placeholder="A10">
+                <label for="input11">GENDER</label><br><select id="gender" required>
+                    <option value="" selected disabled>CHOOSE</option>
+                    <option id="man" value="MAN">MAN</option>
+                    <option value="WOMAN">WOMAN</option>            
+                </select><br>
+                <div id="label12">
+                <label for="input12">MILITARY OBLIGATIONS</label><br><select id="done" required>
+                    <option value="" selected disabled>CHOOSE</option>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>            
+                </select></div><br>
+                <div id="label13">
+                <label for="input13">YEAR OF MILITARY DISCHARGE</label><input required  type="date" placeholder="A13">
+            </div>
+                <label for="input14">CREDIT CARDS (NOT REQUIRED)</label><input type="checkbox" placeholder="A14">
+                <label for="input15">BANK LOAN (NOT REQUIRED)</label><input type="checkbox" placeholder="A15">
+                <label for="input16">GRADUATE</label><br><select required >
+                    <option value="" selected disabled>CHOOSE</option>
+                    <option value="MIDDLESCHOOL">MIDDLESCHOOL</option>
+                    <option value="HIGHSCHOOL">HIGHSCHOOL</option>
+                    <option value="TECHNICALSCHOOL">TECHNICALSCHOOL</option>  
+                    <option value="COLLEGE">COLLEGE</option>  
+                    <option value="UNIVERSITY">UNIVERSITY</option>              
+                </select><br>
+                <input id="submitb" type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="social-icons">
+    <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.google.com" class="social-icon" target="_blank"><i class="fab fa-google"></i></a>
+    <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+<footer>    
+    <p>Design and developed by <span class='colortext'>ARISTSAMP</span><br>Copyright reserved.2023</p>
+  </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>
+
